@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="image-container">
+    <img [src]="product.image" [alt]="product.name" />
+  </div>
+
+  <div class="card-content">
+    <h3 class="title">{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+
+    <div class="bottom">
+      <span class="price">${{ product.price }}</span>
+      <button (click)="addToCart(product)">Agregar</button>
+    </div>
+  </div>
+</div>
